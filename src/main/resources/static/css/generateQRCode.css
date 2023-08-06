@@ -1,0 +1,75 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.mb-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* the next code is for logo word to pdf converter*/
+.image-Logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.image-Logo{
+  max-width: 20%;
+  max-height: 20%;
+}
+/* the next code are efect ovni*/
+.image-Logo {
+  position: relative;
+  animation-name: volar;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes volar {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Reglas de estilo para pantallas con ancho menor a 768px */
+@media screen and (max-width: 767px) {
+   /* Ajustar el tamaño del logo */
+      .image-Logo {
+      width: 50%;
+      }
+   /* Ajustar el tamaño del botón de descarga */
+      .btn-secondary {
+      font-size: 0.8rem;
+      }
+   /* Ajustar el tamaño del footer */
+      .container-footer {
+      font-size: 0.8rem;
+      }
+  }

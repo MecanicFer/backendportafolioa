@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+  <head>
+  
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Luis Fernando Armas Perez</title>
+    
+    <!-- Tab icon -->
+    <link rel="icon" href="../static/imgs/LogoBlancoLFAP.png" th:href="@{/imgs/LogoBlancoLFAP.png}"/>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/footers/">
+    
+    <!-- js effect for images -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/PrincipalPage.css" th:href="@{/css/PrincipalPage.css}"/>
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/carousel.css" th:href="@{/css/carousel.css}"/>
+    
+  </head>
+
+  <body>
+  
+    <header>
+      <!-- the next code is about navbar of bootstrap -->
+      <nav class="navbar navbar-expand-lg fixed-top bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../templates/PrincipalPage.html" th:href="@{/vistas/PrincipalPage}"/>
+          <!-- Nav bar icon --> 
+            <img src="../static/imgs/LogoBlackLFAP.png"  th:src="@{/imgs/LogoBlackLFAP.png}" alt="" width="40" height="40"/>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span> Menú
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../templates/index.html"th:href="@{/vistas/showindex}"/>Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../templates/Proyectos.html"th:href="@{/vistas/Proyectos}"/>Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../templates/mensajeR2D2.html" th:href="@{/vistas/mensajeR2D2}"/>Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.linkedin.com/in/luis-fernando-armas-perez-6aa0801ab/">Contactame</a>
+              </li>
+              <li class="nav-item">
+                <div class="btn-group" role="group">
+    		  		<button type="button" class="btn btn-outline-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Idioma</button>
+    					<ul class="dropdown-menu">
+      						<li><a class="dropdown-item" href="../templates/PrincipalPage.html" th:href="@{/vistas/PrincipalPage}">Español</a></li>
+      						<li><a class="dropdown-item" href="../templates/PrincipalPageEnglish.html" th:href="@{/vistas/PrincipalPageEnglish}">Ingles</a></li>
+    					</ul>
+  			  	</div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../templates/PrincipalPageEnglish.html" th:href="@{/vistas/PrincipalPageEnglish}">
+                	<img src="../static/imgs/Bandera Argentina.png"  th:src="@{/imgs/Bandera Argentina.png}" alt="" width="30" height="30"/>
+                </a>
+              </li> 
+  		   </ul>
+          </div>
+        	<form class="d-flex" role="">
+                	<a href="../templates/login.html" th:href="@{/vistas/IniciarSesion}" class="btn btn-outline-success"/>Iniciar sesión</a>
+            </form>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- START THE FEATURETTES -->
+    <div class="container marketing">
+      <div class="row featurette">
+        <div class="col-md-7">
+          <br>
+          <h2 class="featurette-heading fw-normal lh-1">Luis Fernando Armas Perez <span class="text-muted">Desarrollador Java</span></h2>
+          <br>
+          <p class="lead">Soy una persona apasionada por lo que hace, siempre en busqueda de la mejora continua de los procesos, me gusta estar en continuo aprendizaje de nuevas técnicas ya sea para solucionar un problema técnico o adquirir conocimientos actualizados. Amante del cine, la música, las artes marciales y por supuesto de mi familia.</p>
+          <p class="lead">En el desarrollo de mi carrera profesional orientado al mantenimiento de los sistemas mecatrónicos existen 3 areas fundamentales que me gusta definirlo como la armonía entre un sistema mecánico, un sistema electrónico y un sistema informático, donde un sistema no funciona sin el otro, un ejemplo podria ser el funcionamiento de un vehículo automotriz con norma Euro 6, sin caer en grandes detalles sobre la amplitud del tema, este posee un motor térmico de combustión interna que incluye inyección electrónica controlada, monitoreada y manejada por software, este motor no funcionaria sin la armonia de los 3 sistemas ya mencionados.</p>
+          <p class="lead">En el desarrollo de mis conocimientos y habilidades en el aspecto de la mecánica de sistemas mecatrónicos me llevó indudablemente a desarrollar mis conoicimientos en el area de la electrónica y no pasó mucho tiempo para darme cuenta en que debia dearrollarme en el area de la informática especificamente en el desarrollo de software. En el mundo automotriz existen lenguajes dominantes como los de bajo nivel, en el proceso de mis estudios me encontré con el "Run One Run Enywhere" fue en ese momento en que decidí especializarme en el mundo de Java.</p>
+        </div>
+        <div class="col-md-5" data-aos="fade-down" data-aos-easing="linear"data-aos-duration="1500">
+          <br>
+          <br>
+          <br>
+          <br>
+          <img src="../static/imgs/Foto Carnet.jpg"  th:src="@{/imgs/Foto Carnet.jpg}" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"/></text></img>
+        </div>
+      </div>
+  
+      <hr class="featurette-divider">
+
+      <!-- The next code is the Skills -->
+      <div class="row">
+        <div class="col-lg-4" data-aos="flip-left" data-aos-duration="1500">
+          <img src="../static/imgs/Innovador.png"  th:src="@{/imgs/Innovador.png}" class="bd-placeholder-img rounded-circle" width="140" height="140" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+  
+          <h2 class="fw-normal">Innovador</h2>
+          <p>Una de las cosas que más me apasiona es la busqueda constante de nuevas formas de mejorar los procesos, me gusta transformar positivamente e inteligentemente las tareas, actividades y procesos.</p>
+        </div>
+
+        <div class="col-lg-4" data-aos="flip-up" data-aos-duration="1500">
+          <img src="../static/imgs/Capacidad analitica.png"  th:src="@{/imgs/Capacidad analitica.png}" class="bd-placeholder-img rounded-circle" width="140" height="140" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+  
+          <h2 class="fw-normal">Capacidad analítica</h2>
+          <p>Me gusta pensar criticamente para analizar los procesos y encontrar la resolución del problema o la mejora del sistema.</p>
+        </div>
+
+        <div class="col-lg-4" data-aos="flip-right" data-aos-duration="1500">
+          <img src="../static/imgs/Valores.png"  th:src="@{/imgs/Valores.png}" class="bd-placeholder-img rounded-circle" width="140" height="140" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+  
+          <h2 class="fw-normal">Valores</h2>
+          <p>Mi pilar fundamental son los valores morales, me gusta desarrollarme dentro del margen de la ética profesional expresando responsabilidad, transparencia y honestidad.</p>
+        </div>
+
+      </div>
+      <hr class="featurette-divider">
+    </div>
+
+    <!-- the next code is about Carrousel of bootstrap -->
+    <h1>PROYECTOS</h1>
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+      
+      <!-- Project portafolio -->
+      <div class="carousel-item active">
+        <br>
+        <img class="bd-placeholder-img" width="25%" height="25%" src="../static/imgs/LogoBlackLFAP.png"  th:src="@{/imgs/LogoBlackLFAP.png}"/></img>
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h2 style="color:rgb(5, 5, 5)">Proyecto Mi Portafolio</h2>
+            <p style="color:rgb(5, 5, 5)">En este proyecto te doy una introducción a mi portafolio y de como lo realicé </p>
+            <p><a class="btn btn-lg btn-primary" href="../templates/Proyectos.html" th:href="@{/vistas/Proyectos}">Ir a Proyectos</a></p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project QR -->
+      <div class="carousel-item">
+        <br>
+        <img class="bd-placeholder-img" width="25%" height="25%" src="../static/imgs/imgQR.png"  th:src="@{/imgs/imgQR.png}"/></img>
+        
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h2 style="color:rgb(5, 5, 5)">Proyecto generador QR</h2>
+            <p style="color:rgb(5, 5, 5)">Este proyecto consiste en generar un codigo QR a partir de un enlace.</p>
+            <p><a class="btn btn-lg btn-primary" href="../templates/Proyectos.html" th:href="@{/vistas/Proyectos}"/>Ir a Proyectos</a></p>
+            <p><a class="btn btn-lg btn-primary" href="../templates/generateQRCode.html" th:href="@{/vistas/GeneradorQR}"/>Ir a generador de QR</a></p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project Word to PDF converter-->
+      <div class="carousel-item">
+        <br>
+        <img class="bd-placeholder-img" width="25%" height="25%" src="../static/imgs/Logo WordToPdf.png"  th:src="@{/imgs/Logo WordToPdf.png}"/></img>
+        
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h2 style="color:rgb(5, 5, 5)">Proyecto convertidor de documentos WORD a un PDF</h2>
+            <p style="color:rgb(5, 5, 5)">Este proyecto consiste en convertir un documento WORD a un PDF.</p>
+            <p><a class="btn btn-lg btn-primary" href="../templates/Proyectos.html" th:href="@{/vistas/Proyectos}"/>Ir a Proyectos</a></p>
+            <p><a class="btn btn-lg btn-primary" href="../templates/DocToPdfConverter.html" th:href="@{/vistas/DoctoPDFConverter}"/>Ir a convertidor WORD a PDF</a></p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project PDF merge-->
+      <div class="carousel-item">
+        <br>
+        <img class="bd-placeholder-img" width="25%" height="25%" src="../static/imgs/Logo PDF merger.png"  th:src="@{/imgs/Logo PDF merger.png}"/></img>
+        
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h2 style="color:rgb(5, 5, 5)">Proyecto Unificador PDF</h2>
+            <p style="color:rgb(5, 5, 5)">Este proyecto consiste en unir varios PDF en uno solo, en el blog encontraras más detalles.</p>
+            <p><a class="btn btn-lg btn-primary" href="../templates/Proyectos.html" th:href="@{/vistas/Proyectos}"/>Ir a Proyectos</a></p>
+            <p><a class="btn btn-lg btn-primary" href="../templates/PDF merger.html" th:href="@{/vistas/PDFmerger}"/>Ir al unificador PDF</a></p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Go to Top -->
+  <div class="go-top-container">
+    <div class="go-top-button">
+      <i class="bi bi-arrow-up-square-fill">
+        <img src="../static/imgs/Logo BackToTop.png"  th:src="@{/imgs/Logo BackToTop.png}" alt="" width="60" height="60"/>
+      </i>
+    </div>
+  </div>
+  
+    <!-- FOOTER -->
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        
+        <div class="col-md-4 d-flex align-items-start justify-content-start mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+          <form>
+            <h5>Luis Fernando Armas Perez</h5>
+            <p>Java Developer</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2"> 
+              <a href="https://www.linkedin.com/in/luis-fernando-armas-perez-6aa0801ab/" class="btn btn-primary">Contactame</a>
+            </div>
+          </form>
+        </div>
+
+        <a href="../template/PrincipalPage.html" th:href="@{/vistas/PrincipalPage}" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"/>
+          <img src="../static/imgs/LogoBlackLFAP.png"  th:src="@{/imgs/LogoBlackLFAP.png}" class="bi me-2" width="50" height="50"><use xlink:href="#"/></img>
+        </a>
+           
+        <ul class="nav col-md-4 justify-content-end">
+          <a href="https://www.linkedin.com/in/luis-fernando-armas-perez-6aa0801ab/" target="_blank" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <nav class="nav-link" href="#"><img src="../static/imgs/Logo LinkeIn.png"  th:src="@{/imgs/Logo LinkeIn.png}" alt="" width="24" height="24"/></nav>
+          </a>
+        </ul>
+        
+      </div>
+      </footer>
+    </div>
+      
+  </main>
+    <script src="../static/JavaScript/gotop.js"  th:src="@{/JavaScript/gotop.js}"/></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    
+    <!-- Animacion img-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
+
+
+
+
+

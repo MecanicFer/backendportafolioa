@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:mysql://database-portafolio-aws.cqfy7dstaetc.us-east-2.rds.amazonaws.com:3306/mydb?useSSL=false
+    username: root
+    password: P0rtaf0li0
+     
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    server:
+      port: 5000
+         
+  thymeleaf:
+    cache: false   
+ 

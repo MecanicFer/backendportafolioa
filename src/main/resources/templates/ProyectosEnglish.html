@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+  <head>
+  
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Luis Fernando Armas Perez</title>
+    
+    <!-- Tab icon -->
+    <link rel="icon" href="../static/imgs/LogoBlancoLFAP.png" th:href="@{/imgs/LogoBlancoLFAP.png}"/>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/album/">
+    
+    <!-- js effect for images -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/Proyectos.css" th:href="@{/css/Proyectos.css}" rel="stylesheet"/>
+
+  </head>
+  
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../templates/PrincipalPageEnglish.html" th:href="@{/vistas/PrincipalPageEnglish}"/>
+              <!-- Nav bar icon --> 
+              <img src="../static/imgs/LogoBlackLFAP.png"  th:src="@{/imgs/LogoBlackLFAP.png}" alt="" width="40" height="40"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span> Menú
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link" href="../templates/PrincipalPageEnglish.html" th:href="@{/vistas/PrincipalPageEnglish}"/>about me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.linkedin.com/in/luis-fernando-armas-perez-6aa0801ab/">Contact me</a>
+              </li>
+              <li class="nav-item">
+                <div class="btn-group" role="group">
+    		  		<button type="button" class="btn btn-outline-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">language</button>
+    					<ul class="dropdown-menu">
+      						<li><a class="dropdown-item" href="../templates/Proyectos.html" th:href="@{/vistas/Proyectos}"/>Spanish</a></li>
+      						<li><a class="dropdown-item" href="../templates/ProyectosEnglish.html" th:href="@{/vistas/ProyectosEnglish}"/>English</a></li>
+    					</ul>
+  			  	</div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../templates/Proyectos.html" th:href="@{/vistas/Proyectos}"/>
+                	<img src="../static/imgs/Bandera USA.png"   th:src="@{/imgs/Bandera USA.png}" alt="" width="30" height="30"/>
+                </a>
+              </li> 
+            </ul>
+          </div>
+            <form class="d-flex" role="">
+              <a href="../templates/loginEnglish.html" th:href="@{/vistas/LoginEnglish}" class="btn btn-outline-success"/>Log in</a>
+            </form>
+          </div>
+        </nav>
+        <br>
+        <br>
+  </header>
+
+<main>
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+        <!-- The following code is a card about my portfolio-->
+        <div class="col" data-aos="zoom-in-right"data-aos-duration="1500">
+          <div class="card shadow-sm">
+            <br>
+            <img class="bd-placeholder-img" width="100%" height="100%" src="../static/imgs/capturePortafolio.png"  th:src="@{/imgs/capturePortafolio.png}"/></img>
+
+            <div class="card-body">
+              <h1>Project My Portfolio</h1>
+              <p class="card-text">This is my own portfolio project, here you will find the process of how I did it, as well as web development techniques such as HTML, CSS, JAVASCRIP, GIT, MySql JAVA POO, SPRING, JUNIT, MAVEN, JPA, THYMELEAF, among others</p>
+              <br>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="../templates/SMSenglish.html" th:href="@{/vistas/SMSenglish}" type="button" class="btn btn-sm btn-outline-secondary"/>See project details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- The following code is a card about the QR generator project-->
+        <div class="col" data-aos="fade-up" data-aos-duration="1500">
+          <div class="card shadow-sm">
+          <br>
+            <img class="bd-placeholder-img" width="30%" height="30%" src="../static/imgs/imgQR.png"  th:src="@{/imgs/imgQR.png}"/></img>
+
+            <div class="card-body">
+              <h1>QR generator project</h1>
+              <p class="card-text">This project consists of generating a QR code from a link, in the blog you will find more details</p>
+              <br>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+             <!-- <a href="../templates/SMSuserEnglish.html" th:href="@{/SMSuserEnglish}" type="button" class="btn btn-sm btn-outline-secondary"/>See project details</a> -->
+                  <a href="../templates/generateQRCodeEnglish.html" th:href="@{/vistas/GeneradorQRenglish}" type="button" class="btn btn-sm btn-outline-secondary"/>Go to QR generator</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- The following code is a card about the DOC to PDF converter project-->
+        <div class="col" data-aos="zoom-in-left" data-aos-duration="1500">
+          <div class="card shadow-sm">
+          <br>
+            <img class="bd-placeholder-img" width="30%" height="30%" src="../static/imgs/Logo WordToPdf.png"  th:src="@{/imgs/Logo WordToPdf.png}"/></img>
+
+            <div class="card-body">
+              <h1>Word to PDF converter project</h1>
+              <p class="card-text">This project consists of converting any WORD document into a PDF, in the blog you will find more details</p>
+              <br>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+             <!-- <a href="../templates/SMSuserEnglish.html" th:href="@{/SMSuserEnglish}" type="button" class="btn btn-sm btn-outline-secondary"/>See project details</a> -->
+                  <a href="../templates/DocToPdfConverterEnglish.html" th:href="@{/vistas/DoctoPDFConverterEnglish}" type="button" class="btn btn-sm btn-outline-secondary"/>Go to WORD to PDF converter</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- The following code is a card about PDF merger project-->
+        <div class="col" data-aos="zoom-in-left" data-aos-duration="1500">
+          <div class="card shadow-sm">
+          <br>
+            <img class="bd-placeholder-img" width="30%" height="30%" src="../static/imgs/Logo PDF merger.png"  th:src="@{/imgs/Logo PDF merger.png}"/></img>
+
+            <div class="card-body">
+              <h1>PDF Unifying Project</h1>
+              <p class="card-text">This project consists of joining several PDFs into one, in the blog you will find more details</p>
+              <br>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+             <!-- <a href="../templates/SMSuserEnglish.html" th:href="@{/SMSuserEnglish}" type="button" class="btn btn-sm btn-outline-secondary"/>See project details</a> -->
+                  <a href="../templates/PDF merger English.html" th:href="@{/vistas/PDFmergerEnglish}" type="button" class="btn btn-sm btn-outline-secondary"/>Go to PDF unifier</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+              
+      </div>
+    </div>
+  </div>
+
+  <!-- Go to Top -->
+  <div class="go-top-container">
+    <div class="go-top-button">
+      <i class="bi bi-arrow-up-square-fill">
+        <img src="../static/imgs/Logo BackToTop.png"  th:src="@{/imgs/Logo BackToTop.png}" alt="" width="60" height="60"/>
+      </i> 
+    </div>
+  </div>
+</main>
+
+<!-- FOOTER -->
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        
+        <div class="col-md-4 d-flex align-items-start justify-content-start mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+          <form>
+            <h5>Luis Fernando Armas Perez</h5>
+            <p>Java Developer</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <a href="https://www.linkedin.com/in/luis-fernando-armas-perez-6aa0801ab/" class="btn btn-primary">Contact me</a>
+            </div>
+          </form>
+        </div>
+
+        <a href="../templates/PrincipalPageEnglish.html" th:href="@{/vistas/PrincipalPagerEnglish}" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"/>
+          <img src="../static/imgs/LogoBlackLFAP.png"  th:src="@{/imgs/LogoBlackLFAP.png}" class="bi me-2" width="50" height="50"><use xlink:href="#"/></img>
+        </a>
+           
+        <ul class="nav col-md-4 justify-content-end">
+          <a href="https://www.linkedin.com/in/luis-fernando-armas-perez-6aa0801ab/" target="_blank" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <nav class="nav-link" href="#"><img src="../static/imgs/Logo LinkeIn.png"  th:src="@{/imgs/Logo LinkeIn.png}" alt="" width="24" height="24"/></nav>
+          </a>        
+        </ul>
+        
+      </footer>
+    </div>
+
+    <!-- Animation -->
+    <script src="../static/JavaScript/gotop.js"  th:src="@{/JavaScript/gotop.js}"/></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    
+  </body>
+</html>

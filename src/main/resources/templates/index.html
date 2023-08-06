@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+  <head>
+  
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Luis Fernando Armas Perez</title>
+    
+    <!-- Tab icon -->
+    <link rel="icon" href="../static/imgs/LogoBlancoLFAP.png" th:href="@{/imgs/LogoBlancoLFAP.png}"/>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/footers/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/cover/">
+    
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}"/>
+ 	<link rel="stylesheet" type="text/css" media="all" href="../static/css/Presentacion.css" th:href="@{/css/Presentacion.css}"/>
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/efectoOvni.css" th:href="@{/css/efectoOvni.css}"/>
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/styles.css" th:href="@{/css/styles.css}"/>
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/style.css" th:href="@{/css/style.css}"/>
+
+    
+    <!-- Custom Js for this template -->
+    <script href="../static/resources/JavaScript/efectoOvni.js" th:href="@{/resources/JavaScript/efectoOvni.js}"></script> 
+    
+  </head>
+
+<body class="d-flex h-100 text-center text-bg-dark">
+ 
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+      <div>
+        <nav class="nav nav-masthead justify-content-center float-md-end">
+          <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="../templates/login.html" th:href="@{/vistas/IniciarSesion}"/>Iniciar sesión</a>
+          <a class="nav-link fw-bold py-1 px-0" href="https://www.linkedin.com/in/luis-fernando-armas-perez-6aa0801ab/">Contactame</a>
+          <a class="nav-link fw-bold py-1 px-0" href="../templates/indexEnglish.html"th:href="@{/vistas/indexEnglish}">Idioma</a>
+          <a class="nav-link fw-bold py-1 px-0" href="../templates/indexEnglish.html"th:href="@{/vistas/indexEnglish}">
+          	<img src="../static/imgs/Bandera Argentina.png" th:src="@{/imgs/Bandera Argentina.png}" alt="" width="24" height="24"/>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <br/>
+	<div class="image-Logo">
+      <img id="ovni" class="ovni" width="20%" height="20%" src="../static/imgs/LogoBlancoLFAP.png" th:src="@{/imgs/LogoBlancoLFAP.png}" alt="LogoLFAP">
+    </div>
+    <main class="px-3">
+      <h1>Luis Fernando Armas Perez</h1>
+      <h2>Java Developer</h2>
+      <p class="lead">Desarrollador java backend y frontend</p>
+      <p class="lead">
+      <a href="../templates/PrincipalPage.html" th:href="@{/vistas/PrincipalPage}" class="btn btn-lg btn-secondary fw-bold border-white bg-white"/>COMENCEMOS</a>
+      </p>
+    </main>
+	
+    <!-- Next code is the footer using bootstrap footer -->
+    <footer class="mt-auto text-white-50">
+      <div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="../templates/PrincipalPage.html" th:href="@{/vistas/PrincipalPage}" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <nav class="nav-link" href="#"><img src="../static/imgs/LogoBlancoLFAP.png"  th:src="@{/imgs/LogoBlancoLFAP.png}"alt="" width="40" height="40"/></nav>
+          </a>
+          <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Java developer</span>
+        </div>
+  
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <a href="https://www.linkedin.com/in/luis-fernando-armas-perez-6aa0801ab/" target="_blank" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <nav class="nav-link" href="#"><img src="../static/imgs/Logo LinkeIn.png" th:src="@{/imgs/Logo LinkeIn.png}" alt="" width="24" height="24"/></nav>
+          </a>
+        </ul>
+        
+      </div>
+    </footer>
+  </div>
+  
+  <!-- Animation -->
+  <script>
+    window.onload = function() {
+      flyOvni();
+    }
+  </script>
+     
+</body>
+</html>

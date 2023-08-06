@@ -1,0 +1,34 @@
+.image-LuisAstronauta{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 10px;
+}
+
+.image-LuisAstronauta img {
+   width: 50%;
+   height: 50%;
+  border-radius: 50%;
+}
+.ovni {
+  position: relative;
+  animation-name: volar;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes volar {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+  
+  
+  
